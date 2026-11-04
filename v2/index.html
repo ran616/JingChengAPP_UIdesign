@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ea571b">
+<title>京橙首护 · 双场景交互原型</title>
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" type="image/svg+xml" href="./assets/road-icon.svg">
+</head>
+<body>
+<div class="stage">
+ <aside class="intro">
+  <div class="eyebrow">JINGCHENG / ROAD CARE</div>
+  <h1>路有所护，<br><span>工作更有序。</span></h1>
+  <p>京橙首护 · 移动作业工作台<br>城市道路 / 普通公路</p>
+  <div class="version">INTERACTIVE PROTOTYPE · v0.3.0</div>
+  <div class="page-links" aria-label="原型页面快捷导航"></div>
+  <p class="note"><strong>体验方式</strong><br>底部五项导航切换页面。在“我的”切换城市道路 / 普通公路，并查看原“＋”菜单的全部功能。<br><br>城市道路 → 资产 → 道路，可体验台账搜索与分组详情。“我的” → 退出登录，可查看登录展示页。<br><br>原型中的业务操作仅作演示，不提交真实数据或保存密码。</p>
+ </aside>
+ <div class="device">
+  <div class="status" aria-hidden="true"><span>9:41</span><div class="status-right"><svg viewBox="0 0 24 24"><path d="M3 19v-3m5 3v-7m5 7V8m5 11V4" stroke-width="3"/></svg><svg viewBox="0 0 24 24"><path d="M3 8a14 14 0 0 1 18 0M6 12a9 9 0 0 1 12 0m-9 4a5 5 0 0 1 6 0"/><circle cx="12" cy="20" r=".5"/></svg><span class="battery"></span></div></div>
+  <header class="appbar"><div class="brand"><span class="brandmark" id="brandIcon"></span><span class="brand-name">京橙首护</span></div><span class="scene" id="sceneLabel">普通公路</span></header>
+  <main class="viewport" id="viewport" aria-label="页面内容"><div id="page"></div></main>
+  <nav class="bottom-nav" aria-label="主导航"></nav>
+  <div class="home-indicator" aria-hidden="true"></div>
+  <div class="overlay" id="overlay" hidden><section class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" tabindex="-1"><div class="handle"></div><div class="sheet-head"><div><p id="sheetContext"></p><h2 id="sheetTitle"></h2></div><button class="close" aria-label="关闭功能面板" id="closeSheet"></button></div><div class="section-head" id="sheetActionHeading"><h2>可用操作</h2><span>选择操作查看示意</span></div><div class="sheet-actions" id="sheetActions"></div><div class="preview" id="preview" hidden></div><p class="sheet-foot">交互原型 · 示例内容不提交业务数据</p></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+ </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
